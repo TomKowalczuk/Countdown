@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  
+  font-size: 200%;
+  margin: 0px;
+  color: white;
+  margin: auto 0px auto 0px ;
+}
+
+.content
+{
+    text-align: right;
+}
+
+.countdown
+{
+    background-image: linear-gradient(0deg, rgb(0 0 0 / 50%), transparent);
+    aspect-ratio: 6;
+    border-radius: 15px;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 75% 25%;
+}
+
+.grid
+{
+  display: grid;
+  grid-template-columns: 100%;
+  margin: 20px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+</style>
+</head>
+<body style="background-color: #1a1a1a; margin: 0px;">
+<script>
+    // Set the date we're counting down to
+    var countDownDate1 = new Date("May 27, 2022").getTime();
+    var countDownDate2 = new Date("Jul 5, 2022").getTime();
+    var countDownDate3 = new Date("Jun 6, 2022").getTime();
+    var countDownDate4 = new Date("May 11, 2022").getTime();
+    
+    // Update the count down every 1 second
+    setInterval(function() {
+    
+        // Get today's date and time
+        var now = new Date().getTime();
+    
+        // Output the result in an element with id="demo"
+        document.getElementById("demo1").innerHTML = Math.floor((countDownDate1 - now) / (1000 * 60 * 60 * 24)) + "d ";
+        document.getElementById("demo2").innerHTML = Math.floor((countDownDate2 - now) / (1000 * 60 * 60 * 24)) + "d ";
+        document.getElementById("demo3").innerHTML = Math.floor((countDownDate3 - now) / (1000 * 60 * 60 * 24)) + "d ";
+        document.getElementById("demo4").innerHTML = Math.floor((countDownDate4 - now) / (1000 * 60 * 60 * 24)) + "d ";
+    
+    }, 1000);
+</script>
+<div class="grid">
+    <div class="countdown" style="background-color: red;">
+        <p class="title">Stranger Things</p>
+        <p class="content" id="demo1"></p>
+    </div>
+
+    <div class="countdown" style="background-color: blue;">
+        <p>Bday</p>
+        <p class="content" id="demo2"></p>
+    </div>
+
+    <div class="countdown" style="background-color: purple;">
+        <p>WWDC</p>
+        <p class="content" id="demo3"></p>
+    </div>
+
+    <div class="countdown" style="background-color: orange;">
+        <p>Google I/O</p>
+        <p class="content" id="demo4"></p>
+    </div>
+</div>
+
+
+</body>
+</html>
