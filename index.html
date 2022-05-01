@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
-<html>
+<html style="height: -webkit-fill-available;">
 
     <head>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" href="single-page-icon.png">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="Countdown">
     </head>
 
     <style>
@@ -12,8 +15,13 @@
         body
         {
             font-family: system-ui; 
-            background-color: #1a1a1a; 
+            backdrop-filter: blur(20px);
+            background-image: url("https://media.idownloadblog.com/wp-content/uploads/2021/06/ios-15-iPad-wallpaper-from-ispazio-dark-1200x1200.jpg"); 
             margin: 0px;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            height: -webkit-fill-available;
         }
         
         p {
@@ -43,7 +51,7 @@
         {
         display: grid;
         grid-template-columns: 100%;
-        margin: 20px;
+        padding: 20px;
         row-gap: 20px;
         column-gap: 20px;
         }
