@@ -66,6 +66,7 @@
             var countDownDate2 = new Date("Jul 5, 2022").getTime();
             var countDownDate3 = new Date("Jun 6, 2022").getTime();
             var countDownDate4 = new Date("Jun 27, 2022").getTime();
+            var countDownDate4 = new Date("Jul 1, 2022").getTime();
             
             // Update the count down every 1 second
             setInterval(function() {
@@ -78,13 +79,14 @@
                 document.getElementById("demo2").innerHTML = Math.floor((countDownDate2 - now) / (1000 * 60 * 60 * 24)) + "d";
                 document.getElementById("demo3").innerHTML = Math.floor((countDownDate3 - now) / (1000 * 60 * 60 * 24)) + "d";
                 document.getElementById("demo4").innerHTML = Math.floor((countDownDate4 - now) / (1000 * 60 * 60 * 24)) + "d";
+                document.getElementById("demo5").innerHTML = Math.floor((countDownDate5 - now) / (1000 * 60 * 60 * 24)) + "d";
             
             }, 1000);
         </script>
 
         <div class="grid">
             <div class="countdown" style="background-color: red;">
-                <p class="title">Stranger Things</p>
+                <p class="title">ST Part I</p>
                 <p class="content" id="demo1"></p>
             </div>
 
@@ -97,10 +99,13 @@
                 <p>WWDC</p>
                 <p class="content" id="demo3"></p>
             </div>
-
             <div class="countdown" style="background-color: orange;">
                 <p>Fall Guys</p>
                 <p class="content" id="demo4"></p>
+            </div>
+            <div class="countdown" style="background-color: orange;">
+                <p>ST Part II</p>
+                <p class="content" id="demo5"></p>
             </div>
         </div>
 
